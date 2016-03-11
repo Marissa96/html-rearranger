@@ -10,3 +10,11 @@ $('body').append($newUl1);
 $newH12.html('Above ground veggies');
 $('body').append($newH12);
 $('body').append($newUl2);
+
+$('ul li').each(function () {
+  if ($(this).hasClass('below')) {
+    $newUl1.append($(this));
+  } else {
+    $newUl2.append($(this));
+  }
+});
